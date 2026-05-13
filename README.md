@@ -11,6 +11,8 @@ AI-native social media toolkit.
 
 We are currently focused on shipping marketing-os-seo v0.1 first.
 
+思想・ロードマップ上の位置づけ: **[manifesto / SNS 編](https://github.com/start-x-work/manifesto/blob/main/social/README.md)**
+
 予定機能の詳細は [docs/PLANNED_FEATURES.md](./docs/PLANNED_FEATURES.md) を参照。
 
 参加方法:
