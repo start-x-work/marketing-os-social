@@ -1,25 +1,43 @@
 # Marketing-OS Social
 
-AI-native social media toolkit.
+AI-native social media toolkit for post evaluation, content calendar diagnosis, and account audits.
 
-🚧 **このリポジトリは将来の実装のためのプレースホルダーです**
-🚧 **This repository is a placeholder for future implementation**
+v0.1 CLI focuses on **decision support only** — no auto posting, scheduling, or publishing.
 
-**v0.1 リリース予定: 2027年 Q2 / v0.1 release: 2027 Q2**
+思想・境界線: **[manifesto / SNS 編](https://github.com/start-x-work/manifesto/blob/main/social/README.md)**  
+共通基盤: **[@start-x-work/mos-kit](https://github.com/start-x-work/mos-kit)**
 
-現在は [start-x-work/marketing-os-seo](https://github.com/start-x-work/marketing-os-seo) の v0.1 リリースに集中している。
+## Install
 
-We are currently focused on shipping marketing-os-seo v0.1 first.
+```bash
+npx @start-x-work/mos-social post evaluate "Your post text" --platform x --format json
+```
 
-思想・ロードマップ上の位置づけ: **[manifesto / SNS 編](https://github.com/start-x-work/manifesto/blob/main/social/README.md)**
+## v0.1 CLI Features
 
-予定機能の詳細は [docs/PLANNED_FEATURES.md](./docs/PLANNED_FEATURES.md) を参照。
+- Post evaluation: `mos-social post evaluate "<text>" [--platform x|threads|instagram]`
+- Calendar diagnosis: `mos-social calendar analyze '<json array>'`
+- Account audit: `mos-social account audit <handle> [--platform manual]`
 
-参加方法:
+All commands support `--format json|table|markdown`, `--model gemini|openai|anthropic`, and `--quiet`.
 
-- ⭐ Star でリリース通知を受ける / Star to get release notifications
-- 💬 Discussions で議論に参加 / Join discussions
-- 📋 機能要望は Issue で / File feature requests via Issues
+## Content OS knowledge encoded
+
+- **1/10 rule** — promotional posts should stay at or below 10% of the calendar
+- **URL placement** — direct LP URLs in post body may reduce reach on X/Threads/Instagram
+
+## Development
+
+```bash
+pnpm install --frozen-lockfile
+pnpm lint && pnpm build && pnpm test && pnpm typecheck
+```
+
+Requires `@start-x-work/mos-kit` (local path: `../mos-kit` until npm publish).
+
+## License
+
+Apache-2.0
 
 ---
 
