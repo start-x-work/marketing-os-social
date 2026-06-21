@@ -2,17 +2,14 @@
 import { CliError } from "@start-x-work/marketing-os-social-core";
 import { defineCommand, runMain } from "citty";
 import pc from "picocolors";
-import account from "./commands/account";
-import calendar from "./commands/calendar";
-import post from "./commands/post";
+import socialCommand, { subCommands } from "./command";
 
 const main = defineCommand({
-  meta: { name: "mos-social", description: "Marketing-OS Social toolkit" },
-  subCommands: {
-    post,
-    calendar,
-    account,
+  meta: {
+    name: "mos-social",
+    description: socialCommand.meta?.description ?? "Marketing-OS Social toolkit",
   },
+  subCommands,
 });
 
 runMain(main).catch((error: unknown) => {
