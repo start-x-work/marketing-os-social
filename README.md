@@ -21,6 +21,21 @@ npx @start-x-work/mos-social post evaluate "Your post text" --platform x --forma
 
 All commands support `--format json|table|markdown`, `--model gemini|openai|anthropic`, and `--quiet`.
 
+**Quickstart:** [docs/QUICKSTART.md](./docs/QUICKSTART.md)
+
+## Web UI (N8)
+
+https://marketing-os-social.pages.dev — post evaluation, calendar diagnosis, account audit. AI keys are BYOK.
+
+## OSS vs Commercial
+
+| OSS (this repo) | Commercial [Marketing-OS](https://marketing-os.jp) |
+|---|---|
+| Post eval, calendar/account diagnosis | Community ops, team decision OS |
+| CLI / Web (Apache-2.0) | SLA-backed support |
+
+Boundary: [manifesto / Social](https://github.com/start-x-work/manifesto/blob/main/social/README.md)
+
 ## Content OS knowledge encoded
 
 - **1/10 rule** — promotional posts should stay at or below 10% of the calendar
