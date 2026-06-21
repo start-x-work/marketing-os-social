@@ -7,7 +7,8 @@ import socialCommand, { subCommands } from "./command";
 const main = defineCommand({
   meta: {
     name: "mos-social",
-    description: socialCommand.meta?.description ?? "Marketing-OS Social toolkit",
+    description:
+      socialCommand.meta?.description ?? "Marketing-OS Social toolkit",
   },
   subCommands,
 });
